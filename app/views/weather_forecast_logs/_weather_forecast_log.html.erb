@@ -1,0 +1,11 @@
+<%
+	active_class = @location_id.to_i == weather_forecast_log.id ? 'bg-success' : ''
+%>
+<tr>
+	<td class="<%= active_class %>"><%= weather_forecast_log.location_name %></td>
+	<td class="<%= active_class %>"><%= weather_forecast_log.latitude %></td>
+	<td class="<%= active_class %>"><%= weather_forecast_log.longitude %></td>
+	<td class="<%= active_class %>"><%= weather_forecast_log.elevation %></td>
+	<td class="<%= active_class %>"><%= weather_forecast_log.created_at.strftime("%B %d, %Y at %I:%M %p") %></td>
+	<td><%= link_to 'View Weather Forecast', weather_forecast_logs_path(location_id: weather_forecast_log.id) %></td>
+</tr>

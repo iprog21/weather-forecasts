@@ -1,0 +1,13 @@
+weather_forecast_one:
+  location_name: "Philippines"
+  latitude: 13.40882
+  longitude: 122.56155
+  elevation: 201
+  created_at: <%= Time.zone.now %>
+
+weather_forecast_two:
+  location_name: "New York"
+  latitude: 51.50853
+  longitude: -0.12574
+  elevation: 25
+  created_at: <%= Time.zone.now %>
